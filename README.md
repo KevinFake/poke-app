@@ -1,5 +1,16 @@
-# Vue 3 + TypeScript + Vite
+# poke-app
+Este proyecto es una aplicación web para explorar y gestionar Pokémon, desarrollada con Vue 3 y Vite. Permite buscar, visualizar detalles y marcar Pokémon como favoritos, con una experiencia fluida gracias a TailwindCSS + DaisyUI.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Tecnologías utilizadas
+Vue 3 + Vite: Framework progresivo para la interfaz.
+Pinia: Manejo de estado global, asegurando reactividad y facilidad en la gestión de favoritos.
+Vue Router: Navegación entre vistas de manera eficiente.
+Axios: Cliente HTTP para consumir la API de PokéAPI.
+TailwindCSS + DaisyUI: Estilización rápida y componentes predefinidos.
+LocalStorage: Persistencia de favoritos en el navegador.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Optimización en la carga de datos
+Para mejorar la experiencia y el rendimiento:
+Carga por lotes: Los Pokémon se obtienen en bloques de 20 usando un scroll infinito, evitando la sobrecarga inicial.
+Evitamos recargas innecesarias: Se almacena el estado de los Pokémon ya cargados para no volver a solicitarlos.
+Búsqueda en tiempo real: Filtros aplicados en el frontend sin afectar el rendimiento.
