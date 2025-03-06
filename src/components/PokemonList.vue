@@ -51,13 +51,13 @@
                             <strong>Name:</strong> {{ selectedPokemon.name }}
                         </p>
                         <p v-if="selectedPokemon?.height" class="border-b border-[#dcdcdc] h-1/5 py-2">
-                            <strong>Altura:</strong> {{ selectedPokemon.height }}
+                            <strong>Height:</strong> {{ selectedPokemon.height }}
                         </p>
                         <p v-if="selectedPokemon?.weight" class="border-b border-[#dcdcdc] h-1/5 py-2">
-                            <strong>Peso:</strong> {{ selectedPokemon.weight }}
+                            <strong>Weight:</strong> {{ selectedPokemon.weight }}
                         </p>
                         <p v-if="selectedPokemon?.types" class="border-b border-[#dcdcdc] h-1/5 py-2">
-                            <strong>Tipo:</strong> {{selectedPokemon.types?.map(t => t.type.name).join(", ")}}
+                            <strong>Type:</strong> {{selectedPokemon.types?.map(t => t.type.name).join(", ")}}
                         </p>
                     </div>
                 </div>
